@@ -15,4 +15,9 @@ jobs:
     steps:
       - name: test
         shell: bash
-        run: env
+        run: |
+          echo ${{ inputs.benchmark_event }}
+          echo
+          echo ${{ inputs.ref }}
+          echo 
+          env
